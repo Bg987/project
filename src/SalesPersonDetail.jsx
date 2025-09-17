@@ -112,7 +112,6 @@ export default function SalesPersonDetail({ salesperson, onBack }) {
 
   return (
     <div style={{ height: "100vh", width: "100vw" }}>
-      {/* 🔙 Back Button */}
       <button
         onClick={onBack}
         style={{
@@ -130,7 +129,7 @@ export default function SalesPersonDetail({ salesperson, onBack }) {
       >
         ⬅ Back
       </button>
-
+        <div style={{ fontSize: "16px", fontWeight: "bold", color: "#333" }}>{salesperson.name}</div>
       {/* Time filter */}
       <div
         style={{
@@ -162,7 +161,7 @@ export default function SalesPersonDetail({ salesperson, onBack }) {
           step="60"
         />
       </div>
-
+        
       {/* Controls */}
       <div
         style={{

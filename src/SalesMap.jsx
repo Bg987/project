@@ -164,6 +164,7 @@ export default function SalesMap() {
           position: absolute;
           top: 70px;
           left: 10px;
+          color : black;
           z-index: 1000;
           max-height: 60vh;
           overflow-y: auto;
@@ -180,6 +181,7 @@ export default function SalesMap() {
           padding: 8px;
           margin-bottom: 5px;
           cursor: pointer;
+          color : black;
           border-radius: 6px;
           background: #f0f0f0;
         }
@@ -206,8 +208,6 @@ export default function SalesMap() {
           font-size: 0.8rem;
           color: #555;
         }
-
-        /* 📱 Mobile Responsive */
         @media (max-width: 768px) {
           .filters-bar {
             top: auto;
@@ -222,6 +222,7 @@ export default function SalesMap() {
           .salesperson-list {
             top: auto;
             bottom: 80px;
+            color : black;
             left: 50%;
             transform: translateX(-50%);
             width: 90%;
