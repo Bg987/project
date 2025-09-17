@@ -67,7 +67,7 @@ useEffect(() => {
           lat: newLat,
           lng: newLng,
           history: [...sp.history, { lat: newLat, lng: newLng, time: new Date() }],
-          lastUpdateTime: new Date(), // update lastUpdateTime only when this update happens
+          lastUpdateTime: new Date(), // update lastUpdateTime 
         };
       })
     );
