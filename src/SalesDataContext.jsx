@@ -14,12 +14,12 @@ const initialSalespersons = [
 ];
 
 // Helper: generate random walk history
-function generateHistory(lat, lng, startHour = 9, endHour = 12) {
+function generateHistory(lat, lng, startHour = 8, endHour = 12) {
   const history = [];
   let currentLat = lat;
   let currentLng = lng;
 
-  const intervalMinutes = 5;
+  const intervalMinutes = 1;
 
   for (let h = startHour; h < endHour; h++) {
     for (let m = 0; m < 60; m += intervalMinutes) {
@@ -71,7 +71,7 @@ useEffect(() => {
         };
       })
     );
-  }, 2000);
+  }, 3000);
 
   return () => clearInterval(interval);
 }, []);
